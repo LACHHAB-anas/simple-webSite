@@ -1,0 +1,133 @@
+body {
+  size: 13px;
+  font-family: comic sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: serif sans-serif;
+  size: 20px;
+  font-weight: bold;
+}
+
+header {
+  height: 100px;
+}
+footer {
+  height: 100px;
+  text-align: center;
+  background-color: #d3d3d3;
+  border: 3px solid gray;
+  padding-top: 30px;
+}
+
+nav div ul li {
+  list-style: none;
+  float: left;
+}
+
+nav div ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  width: 100%;
+  background-color: gray;
+}
+
+nav > div > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  size: 15px;
+}
+
+.Centre {
+  display: table;
+  margin: 0 auto;
+}
+
+.Acceuil:hover {
+  border: 5px solid lightslategray;
+  background-color: lightslategray;
+}
+
+.Parcours:hover {
+  border: 5px solid lightslategray;
+  background-color: lightslategray;
+}
+
+.Competences:hover {
+  border: 5px solid lightslategray;
+  background-color: lightslategray;
+}
+
+.Loisirs:hover {
+  border: 5px solid lightslategray;
+  background-color: lightslategray;
+}
+
+.Contact:hover {
+  border: 5px solid lightslategray;
+  background-color: lightslategray;
+}
+
+/* responsive design  */
+
+@media screen and (max-width: 780px) {
+  header {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 20px 0 px 0px 0px;
+  }
+  nav li a {
+    font-size: 12px;
+    padding: 10 px;
+  }
+  nav li a :hover {
+    padding: 5px 10 px 10 px 10 px;
+  }
+}
+
+section {
+  height: 300px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Globale {
+  margin-left: 10%;
+}
+
+.Gauche {
+  float: left;
+  width: 30%;
+}
+
+.Droite {
+  float: right;
+  width: 70%;
+}
+
+.Gauche-Comp,
+.Droite-Comp,
+.SousGauche,
+.SousDroite {
+  float: left;
+  width: 50%;
+}
+
+.Globale::after,
+.SousGlobale::after {
+  content: "";
+  clear: both;
+  display: table;
+}
